@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draggable</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="draggable.css">
+
 </head>
 <body>
+
         <div class="navigation">
                 <div class="toggle"></div>
                 <ul>
@@ -39,10 +39,12 @@
                         </a>
                      </li>
                 </ul>
+                
         </div>
             <div class="glass"></div>
             <div class="glass-blue"></div>
     <script>
+
         const navi = document.querySelector(".navigation");
 
         document.querySelector(".toggle").ondblclick = function(){
@@ -53,5 +55,15 @@
         }
 
     </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+            $( function() {
+            $( ".navigation" ).draggable();
+            } );
+    </script>
+
+
 </body>
 </html>
